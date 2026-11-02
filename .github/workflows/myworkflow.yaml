@@ -1,11 +1,10 @@
-
 name: MyfirstWorkflow
 
 on:
   push:
 
 jobs:
-  myfirstjob:
+  job1:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,7 +13,8 @@ jobs:
 
       - name: step2
         run: echo "This is my first workflow"
-job2:
+
+  job2:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,4 +22,10 @@ job2:
         run: echo "Hello World from job2"
 
       - name: step2
-        run: echo "This is my second workflow"  
+        run: echo "This is my second workflow"
+
+      - name: step3
+        run: echo "This is my third step in job2"
+
+      - name: step4
+        run: echo "This is my fourth step in job2"
